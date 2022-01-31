@@ -1,11 +1,11 @@
+using System.Collections.Generic;
 using System.Diagnostics;
 using Hospital_queue.Models;
 using Microsoft.AspNetCore.Mvc;
-
-namespace Hospital_queue.Data;
-
 using Microsoft.EntityFrameworkCore;
 using Queue.Models;
+
+namespace Hospital_queue.Data;
 
 namespace Hospital_queue.Data; 
 public class QueueDbContext : DbContext {
