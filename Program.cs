@@ -1,3 +1,4 @@
+using Hospital_queue.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

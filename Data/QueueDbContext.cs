@@ -3,12 +3,12 @@ using System.Diagnostics;
 using Hospital_queue.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Queue.Models;
+
 
 namespace Hospital_queue.Data;
 
-namespace Hospital_queue.Data; 
-public class QueueDbContext : DbContext {
+public class QueueDbContext : DbContext 
+{
     public QueueDbContext (DbContextOptions<QueueDbContext> options) : base (options) { }
     public DbSet<QueueModel> queues { get; set; }
 

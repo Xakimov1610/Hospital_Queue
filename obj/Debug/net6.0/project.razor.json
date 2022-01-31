@@ -16298,6 +16298,16 @@
   "RootNamespace": "Hospital_queue",
   "Documents": [
     {
+      "FilePath": "/Users/xakimov/Dev/Csharp/Hospital-queue/Views/Home/ShowQueue.cshtml",
+      "TargetPath": "Views\\Home\\ShowQueue.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/xakimov/Dev/Csharp/Hospital-queue/Views/Home/TakeQueue.cshtml",
+      "TargetPath": "Views\\Home\\TakeQueue.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/xakimov/Dev/Csharp/Hospital-queue/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -16328,8 +16338,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/xakimov/Dev/Csharp/Hospital-queue/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "/Users/xakimov/Dev/Csharp/Hospital-queue/Views/Home/AdminPage.cshtml",
+      "TargetPath": "Views\\Home\\AdminPage.cshtml",
       "FileKind": "mvc"
     }
   ],
