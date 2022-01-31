@@ -1,7 +1,7 @@
 using Hospital_queue.Models;
 using Microsoft.AspNetCore.Identity;
 
-namespace Hospital_queue;
+namespace register;
 
 public class Seed : BackgroundService
 {
