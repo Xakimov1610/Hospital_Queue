@@ -3,13 +3,10 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<QueueDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
-
-// Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

@@ -1,0 +1,19 @@
+@model QueueViewModel
+
+<form asp-action="Create" asp-controller="Queue" method="post">
+    <div class="form-label-group">
+        <input asp-for="Fullname" type="text" id="Fullname" class="form-control" placeholder="" required="">
+        <label class="text-muted" asp-for="Fullname" for="Fullname"></label>
+        <span asp-validation-for="Fullname" class="text-danger"></span>
+    </div>
+
+    <div class="form-label-group">
+        <input asp-for="PhoneNumber" type="text" id="PhoneNumber" class="form-control" placeholder="" required="">
+        <label class="text-muted" asp-for="PhoneNumber" for="PhoneNumber"></label>
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
+
+    <div class="row mx-auto">
+        <button class="btn btn-lg btn-success" type="submit">Take queue</button>
+    </div>
+</form>

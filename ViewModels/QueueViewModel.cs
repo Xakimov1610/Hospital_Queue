@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace HospitalQueue.ViewModels;
+namespace Hospital_queue.ViewModels;
 
 public class QueueViewModel
 {
