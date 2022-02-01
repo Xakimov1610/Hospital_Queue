@@ -22,38 +22,37 @@ namespace Hospital_queue.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Hospital_queue.Models.QueueModel", b =>
+            modelBuilder.Entity("Hospital_queue.Entities.Queue", b =>
                 {
-                    b.Property<Guid>("ID")
-                        .ValueGeneratedOnAdd()
+                    b.Property<Guid>("Id")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("Active")
+                        .HasColumnType("bit");
 
                     b.Property<DateTimeOffset>("CreatedAt")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<string>("CustomerName")
+                    b.Property<string>("Fullname")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
 
                     b.Property<DateTimeOffset>("ModifiedAt")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<decimal>("Number")
+                        .HasColumnType("decimal(20,0)");
 
-                    b.Property<DateTimeOffset>("QueueTime")
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTimeOffset>("ServiceTime")
                         .HasColumnType("datetimeoffset");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
-                    b.HasIndex("Phone")
-                        .IsUnique();
-
-                    b.ToTable("queues");
+                    b.ToTable("Queues");
                 });
 #pragma warning restore 612, 618
         }

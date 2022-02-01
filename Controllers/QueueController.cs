@@ -1,9 +1,13 @@
+
 using Hospital_queue.Data;
+using Hospital_queue.Entities;
+using Hospital_queue.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Hospital_queue.Controllers;
-Route("[controller]")]
+[Route("[controller]")]
+
 public class QueueController : Controller
 {
     private readonly QueueDbContext _context;
